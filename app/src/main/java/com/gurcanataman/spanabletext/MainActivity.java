@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         gelenText = gelenText.replaceAll("_([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s\\n]+)_", "<u>$1</u>");
         gelenText = gelenText.replaceAll("-([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s\\n]+)-", "<strike>$1</strike>");
         gelenText = gelenText.replaceAll("\\n","<br>");
-
         textView.setHtml(gelenText);
     }
 }
