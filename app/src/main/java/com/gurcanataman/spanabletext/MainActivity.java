@@ -38,10 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void yaziGonder(String gelenText) {
 
-        gelenText = gelenText.replaceAll("\\*([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s]+)\\*", "<b>$1</b>");
-        gelenText = gelenText.replaceAll("=([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s]+)=", "<i>$1</i>");
-        gelenText = gelenText.replaceAll("_([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s]+)_", "<u>$1</u>");
-        gelenText = gelenText.replaceAll("-([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s]+)-", "<strike>$1</strike>");
+
+        gelenText = gelenText.replaceAll("\\*([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s\\n]+)\\*", "<b> <font color=\"#c2cd45\">$1</font></b>");
+        gelenText = gelenText.replaceAll("=([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s\\n]+)=", "<i>$1</i>");
+        gelenText = gelenText.replaceAll("_([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s\\n]+)_", "<u>$1</u>");
+        gelenText = gelenText.replaceAll("-([a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\\s\\n]+)-", "<strike>$1</strike>");
+        gelenText = gelenText.replaceAll("\\n","<br>");
 
         textView.setHtml(gelenText);
     }

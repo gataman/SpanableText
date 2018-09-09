@@ -18,7 +18,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="Bu metinde bazı kelimeler *kalin* , =italik=, -ustu çizili- ya da  _alticizili_ olabiliyor. "
+        android:text="Bu metinde bazı kelimeler *kalin* , =italik=, -ustu çizili- ya da  _alti cizili_ olabiliyor. "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
